@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icon/add.png</file>
+        <file>resources/icon/close.png</file>
+        <file>resources/icon/del.png</file>
+        <file>resources/icon/edit.png</file>
+        <file>resources/icon/exit.png</file>
+        <file>resources/icon/logo.ico</file>
+        <file>resources/font/MiSans.ttf</file>
+    </qresource>
+</RCC>
