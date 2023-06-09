@@ -1,5 +1,4 @@
 #include "addtime.h"
-#include "config.h"
 #include "ui_addtime.h"
 
 AddTime::AddTime(QWidget *parent) :

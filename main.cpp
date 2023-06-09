@@ -1,5 +1,4 @@
 #include "countdown.h"
-#include "setting.h"
 
 #include <QApplication>
 #include <QGuiApplication>
@@ -14,7 +13,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    HANDLE hMutex = CreateMutex(NULL, FALSE, _T("countDownWindows"));
+    HANDLE hMutex = CreateMutex(NULL, FALSE, _T("CountDownWindows"));
     if(GetLastError() == ERROR_ALREADY_EXISTS) {
         CloseHandle(hMutex);
         QMessageBox::warning(NULL,"提示","已经有正在运行的窗口!");

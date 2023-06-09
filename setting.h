@@ -5,7 +5,6 @@
 #include <QSqlDatabase>
 #include <QWidget>
 #include "qevent.h"
-#include "config.h"
 #include "addtime.h"
 
 namespace Ui {

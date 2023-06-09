@@ -1,5 +1,4 @@
 #include "about.h"
-#include "config.h"
 #include "ui_about.h"
 
 #include <QJsonDocument>

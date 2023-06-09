@@ -84,8 +84,6 @@ void Countdown::about()
     return;
 }
 
-
-
 void Countdown::enterEvent(QEnterEvent *event)
 {
     int width = QGuiApplication::primaryScreen()->geometry().width();

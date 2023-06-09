@@ -2,8 +2,6 @@
 #define ABOUT_H
 
 #include <QDialog>
-#include <QNetworkReply>
-#include <QThread>
 
 namespace Ui {
 class About;

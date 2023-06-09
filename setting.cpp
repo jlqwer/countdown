@@ -2,6 +2,7 @@
 #include "timeitem.h"
 #include "ui_setting.h"
 #include <QMessageBox>
+#include "config.h"
 
 Setting::Setting(QWidget *parent) :
     QWidget(parent),
