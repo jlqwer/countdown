@@ -58,6 +58,13 @@ bool Config::init()
         addTimePiont(this->db, QString("17:30:00"));
     }
 
+    //系统配置
+    query.exec("select * from sqlite_master where type = 'table' and name = 'config'");
+    if(!query.next()) {
+        //初始化表
+        query.exec("create table config(name varchar primary key, value varchar)");
+    }
+
     return true;
 }
 
