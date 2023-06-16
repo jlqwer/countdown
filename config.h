@@ -16,6 +16,8 @@ class Config
         static int addTimePiont(QSqlDatabase db, QString time);
         static bool truncateTimePioonts(QSqlDatabase db);
         static QFont getFont(int size);
+        static QString getConfig(QSqlDatabase, QString);
+        static QString setConfig(QSqlDatabase, QString, QString);
 
     private:
         QSqlDatabase db;

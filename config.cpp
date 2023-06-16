@@ -113,3 +113,25 @@ QFont Config::getFont(int size)
     font.setPointSize(size);
     return font;
 }
+
+//获取设置
+QString Config::getConfig(QSqlDatabase database, QString name) {
+    QString value = "";
+    QSqlQuery query = QSqlQuery(database);
+    query.exec(QString("select value from config where name = '%1'").arg(name));
+    if(query.next()) {
+        value = query.value(0).toString();
+    }
+    return value;
+}
+//修改设置
+QString Config::setConfig(QSqlDatabase database, QString name,  QString value) {
+    QSqlQuery query = QSqlQuery(database);
+    query.exec(QString("select value from config where name = '%1'").arg(name));
+    if(query.next()) {
+        query.exec(QString("update config set value='%1' where name = '%2'").arg(value, name));
+    } else {
+        query.exec(QString("insert into config values('%1', '%2')").arg(name, value));
+    }
+    return value;
+}
