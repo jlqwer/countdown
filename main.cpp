@@ -29,10 +29,6 @@ int main(int argc, char *argv[])
     w.setAttribute(Qt::WA_TranslucentBackground);
     w.setWindowOpacity(0.7);
 
-    //位置
-    w.setCursor(QCursor(Qt::PointingHandCursor));
-    int width = QGuiApplication::primaryScreen()->geometry().width();
-    w.move(width - 145, 65);
     w.show();
 
     return a.exec();

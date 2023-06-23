@@ -36,6 +36,8 @@ class Countdown : public QWidget
         QMenu menu;
         bool settingIsShow;
 
+        void savePos(int x, int y);
+
     protected:
         bool m_isPressed = false;
         QPoint m_startMovePos;

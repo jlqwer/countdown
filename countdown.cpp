@@ -55,10 +55,26 @@ void Countdown::init()
 
     this->db = this->config->getDb();
     this->timePionts = Config::getTimePionts(this->db);
+
+    //菜单
     this->settingIsShow = false;
     this->menu.addAction(QIcon(":/resources/icon/edit.png"), "时间设置", this, &Countdown::showSetting);
     this->menu.addAction(QIcon(":/resources/icon/logo.ico"), "关于", this, &Countdown::about);
     this->menu.addAction(QIcon(":/resources/icon/exit.png"), "退出", this, &Countdown::quit);
+
+    //位置
+    this->setCursor(QCursor(Qt::PointingHandCursor));
+
+    //读取上次浮窗位置
+    QString posx = Config::getConfig(this->db, "posx");
+    QString posy = Config::getConfig(this->db, "posy");
+    if (posx != "" && posy != "") {
+        QPoint *initPos = new QPoint(posx.toInt(), posy.toInt());
+        move(*initPos);
+    } else {
+        int width = QGuiApplication::primaryScreen()->geometry().width();
+        this->move(width - 145, 65);
+    }
 }
 
 
@@ -113,10 +129,17 @@ void Countdown::mousePressEvent(QMouseEvent *event)
 //鼠标拖动
 void Countdown::mouseMoveEvent(QMouseEvent *event)
 {
-    if(m_isPressed)
-    {
-        move(this->mapToGlobal(event->pos() - m_startMovePos));
+    if(m_isPressed) {
+        QPoint curPos = this->mapToGlobal(event->pos() - m_startMovePos);
+        move(curPos);
+        savePos(curPos.x(), curPos.y());
     }
+}
+
+void Countdown::savePos(int x, int y)
+{
+    Config::setConfig(this->db, "posx", QString("%1").arg(x));
+    Config::setConfig(this->db, "posy", QString("%1").arg(y));
 }
 
 
