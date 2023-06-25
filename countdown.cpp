@@ -95,8 +95,8 @@ void Countdown::showSetting()
 //关于
 void Countdown::about()
 {
-    About about_w;
-    about_w.exec();
+    About *about_w = new About();
+    about_w->show();
     return;
 }
 

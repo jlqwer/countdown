@@ -8,9 +8,10 @@
 #include <QFontDatabase>
 
 About::About(QWidget *parent) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::About)
 {
+    this->setWindowFlags(Qt::WindowCloseButtonHint | Qt::WindowStaysOnTopHint);
     ui->setupUi(this);
 }
 
