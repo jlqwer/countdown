@@ -1,8 +1,8 @@
-# countdown
+# Countdown
 倒计时 悬浮窗
 
 
-## status
+## Status
 
 |[Build][build-link]|[License][license-link]| [Release][release-link]|[Download][download-link]|[Issues][issues-link]|
 |-----------------|-----------------|-----------------|-----------------|-----------------|
