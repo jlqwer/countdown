@@ -5,7 +5,7 @@
 ## status
 
 |[Build][build-link]|[License][license-link]| [Release][release-link]|[Download][download-link]|[Issues][issues-link]|
-|-----------------|-----------------|-----------------|-----------------|
+|-----------------|-----------------|-----------------|-----------------|-----------------|
 |![build-badge] |![release-badge] | ![download-badge]|![issues-badge]|
 
 [build-link]: https://github.com/jlqwer/countdown/actions?query=workflow%3AWindows "WindowsAction"
