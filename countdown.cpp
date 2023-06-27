@@ -163,6 +163,42 @@ QString Countdown::getTimeStr()
     return Config::getTimeStr(last_time);
 }
 
+QStringList Countdown::splitLastTime(int time)
+{
+    QStringList result = {"","0","0","0","0","0","0"};
+
+    if(time < 0) {
+        time = -time;
+        result[0] = '-';
+    }
+    
+    int s = time % 60;
+    if (s>9) {
+        result[6] = QString("%1").arg(s%10);
+        result[5] = QString("%1").arg(int(s/10));
+    } else {
+        result[6] = QString("%1").arg(s);
+    }
+
+    time = int(time / 60);
+    int m = time % 60;
+    if (m>9) {
+        result[4] = QString("%1").arg(m%10);
+        result[3] = QString("%1").arg(int(m/10));
+    } else {
+        result[4] = QString("%1").arg(m);
+    }
+
+    int h = int(time / 60);
+    if (h>9) {
+        result[2] = QString("%1").arg(h%10);
+        result[1] = QString("%1").arg(int(h/10));
+    } else {
+        result[2] = QString("%1").arg(h);
+    }
+    return result;
+}
+
 void Countdown::downTime()
 {
     QString time_str = getTimeStr();

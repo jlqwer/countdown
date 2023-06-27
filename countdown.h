@@ -28,6 +28,7 @@ class Countdown : public QWidget
     private:
         Ui::Countdown *ui;
         QString getTimeStr();
+        QStringList splitLastTime(int time);
         QSqlDatabase db;
         Config *config;
         Setting *setting_w;
