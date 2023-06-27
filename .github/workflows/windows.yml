@@ -56,7 +56,7 @@ jobs:
       - name: package
         id: package      
         env:
-          archiveName: Countdown-${{ github.ref }}-${{ matrix.qt_arch }}
+          archiveName: Countdown-${{ matrix.qt_arch }}
           msvcArch: ${{ matrix.msvc_arch }}          
         shell: pwsh
         run: |
