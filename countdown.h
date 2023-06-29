@@ -27,7 +27,7 @@ class Countdown : public QWidget
 
     private:
         Ui::Countdown *ui;
-        QString getTimeStr();
+        QStringList getTimeStr();
         QStringList splitLastTime(int time);
         QSqlDatabase db;
         Config *config;
@@ -42,6 +42,8 @@ class Countdown : public QWidget
     protected:
         bool m_isPressed = false;
         QPoint m_startMovePos;
+
+        void paintEvent(QPaintEvent *event);
         void mousePressEvent(QMouseEvent *event);
         void mouseMoveEvent(QMouseEvent *event);
         void enterEvent(QEnterEvent *event);

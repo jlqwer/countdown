@@ -7,5 +7,6 @@
         <file>resources/icon/exit.png</file>
         <file>resources/icon/logo.ico</file>
         <file>resources/font/MiSans.ttf</file>
+        <file>resources/images/background.png</file>
     </qresource>
 </RCC>

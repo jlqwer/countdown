@@ -19,13 +19,14 @@
 #include <QDesktopServices>
 #include <QImage>
 #include <QFontDatabase>
+#include <QPainter>
+#include <QPainterPath>
 
 Countdown::Countdown(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Countdown)
 {
     ui->setupUi(this);
-    this->ui->time_label->setStyleSheet("color:rgb(51,255,0);background:rgba(0, 0, 0, 1);");
     qApp->setQuitOnLastWindowClosed(false);
     this->init();
     QTimer *timer = new QTimer(this);
@@ -37,6 +38,16 @@ Countdown::~Countdown()
 {
     delete ui;
 }
+
+
+void Countdown::paintEvent(QPaintEvent *event)
+{
+    Q_UNUSED(event);
+    QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    painter.drawPixmap(rect(), QPixmap(":/resources/images/background.png"));
+}
+
 
 //右键菜单
 void Countdown::quit()
@@ -51,7 +62,7 @@ void Countdown::init()
     if(!this->config->init()) {
         QMessageBox::warning(NULL,"提示","初始化失败!");
     }
-    this->ui->time_label->setFont(Config::getFont(16));
+    this->ui->time_label_0->setFont(Config::getFont(16));
 
     this->db = this->config->getDb();
     this->timePionts = Config::getTimePionts(this->db);
@@ -143,7 +154,7 @@ void Countdown::savePos(int x, int y)
 }
 
 
-QString Countdown::getTimeStr()
+QStringList Countdown::getTimeStr()
 {
     QDateTime time = QDateTime::currentDateTime();   //获取当前时间
     int64_t now = time.toSecsSinceEpoch();
@@ -160,7 +171,7 @@ QString Countdown::getTimeStr()
         }
     }
 
-    return Config::getTimeStr(last_time);
+    return this->splitLastTime(last_time);
 }
 
 QStringList Countdown::splitLastTime(int time)
@@ -201,8 +212,16 @@ QStringList Countdown::splitLastTime(int time)
 
 void Countdown::downTime()
 {
-    QString time_str = getTimeStr();
-    this->ui->time_label->setText(time_str);
+    QStringList time_str = getTimeStr();
+
+
+    this->ui->time_label_0->setText(time_str.at(0));
+    this->ui->time_label_1->setText(time_str.at(1));
+    this->ui->time_label_2->setText(time_str.at(2));
+    this->ui->time_label_4->setText(time_str.at(3));
+    this->ui->time_label_5->setText(time_str.at(4));
+    this->ui->time_label_7->setText(time_str.at(5));
+    this->ui->time_label_8->setText(time_str.at(6));
 }
 
 void Countdown::returnMain()

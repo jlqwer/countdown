@@ -46,7 +46,7 @@ CONFIG += \
     resources_big
 
 RC_ICONS = resources/icon/logo.ico
-VERSION = 0.1.2
+VERSION = 0.1.3
 RC_LANG = 0x0004
 QMAKE_TARGET_COMPANY = jlqwer
 QMAKE_TARGET_PRODUCT = CountDown

@@ -44,14 +44,15 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-radius:8px;</string>
+   <string notr="true">color:rgb(51,255,0);
+background-image: url(:/resources/images/background.png);</string>
   </property>
-  <widget class="QLabel" name="time_label">
+  <widget class="QLabel" name="time_label_0">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>5</x>
      <y>0</y>
-     <width>110</width>
+     <width>10</width>
      <height>35</height>
     </rect>
    </property>
@@ -63,19 +64,19 @@
    </property>
    <property name="minimumSize">
     <size>
-     <width>110</width>
+     <width>10</width>
      <height>35</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>110</width>
+     <width>10</width>
      <height>35</height>
     </size>
    </property>
    <property name="baseSize">
     <size>
-     <width>110</width>
+     <width>30</width>
      <height>35</height>
     </size>
    </property>
@@ -92,12 +93,437 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string notr="true">00:00:00</string>
+    <string notr="true">-</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="time_label_1">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_2">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_4">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_5">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_7">
+   <property name="geometry">
+    <rect>
+     <x>73</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_8">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>0</y>
+     <width>12</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>12</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_3">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>0</y>
+     <width>5</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>5</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>5</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label_6">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>0</y>
+     <width>5</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>5</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>5</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>30</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>小米兰亭</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>time_label_2</zorder>
+  <zorder>time_label_0</zorder>
+  <zorder>time_label_1</zorder>
+  <zorder>time_label_7</zorder>
+  <zorder>time_label_8</zorder>
+  <zorder>time_label_6</zorder>
+  <zorder>time_label_5</zorder>
+  <zorder>time_label_4</zorder>
+  <zorder>time_label_3</zorder>
  </widget>
  <resources>
   <include location="resources.qrc"/>
