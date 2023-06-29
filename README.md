@@ -5,7 +5,7 @@
 ## Status
 
 |[![build-badge]][build-link] |[![release-badge]][release-link] | [![download-badge]][download-link]|[![license-badge]][license-link]|[![issues-badge]][issues-link]|
-
+|-----------------|-----------------|-----------------|-----------------|-----------------|
 
 [build-link]: https://github.com/jlqwer/countdown/actions?query=workflow%3AWindows "WindowsAction"
 [build-badge]: https://github.com/jlqwer/countdown/workflows/Windows/badge.svg  "Windows"
