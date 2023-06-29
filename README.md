@@ -6,10 +6,10 @@
 
 |[Build][build-link]| [Release][release-link]|[Download][download-link]|[License][license-link]|[Issues][issues-link]|
 |-----------------|-----------------|-----------------|-----------------|-----------------|
-|![build-badge][build-link] |![release-badge][release-link] | ![download-badge][download-link]|![license-badge][license-link]|![issues-badge][issues-link]|
+|[![build-badge]][build-link] |[![release-badge]][release-link] | [![download-badge]][download-link]|[![license-badge]][license-link]|[![issues-badge]][issues-link]|
 
 [build-link]: https://github.com/jlqwer/countdown/actions?query=workflow%3AWindows "WindowsAction"
-[build-badge]: https://github.com/jlqwer/countdown/workflows/Windows/badge.svg  [build-link]
+[build-badge]: https://github.com/jlqwer/countdown/workflows/Windows/badge.svg  "Windows"
 
 [release-link]: https://github.com/jlqwer/countdown/releases "Release status"
 [release-badge]: https://img.shields.io/github/release/jlqwer/countdown.svg?style=flat-square "Release status"
