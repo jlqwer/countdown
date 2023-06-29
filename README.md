@@ -6,7 +6,7 @@
 
 |[Build][build-link]| [Release][release-link]|[Download][download-link]|[License][license-link]|[Issues][issues-link]|
 |-----------------|-----------------|-----------------|-----------------|-----------------|
-|![build-badge] |![release-badge] | ![download-badge]|![license-badge]|![issues-badge]|
+|![build-badge][build-link] |![release-badge][release-link] | ![download-badge][download-link]|![license-badge][license-link]|![issues-badge][issues-link]|
 
 [build-link]: https://github.com/jlqwer/countdown/actions?query=workflow%3AWindows "WindowsAction"
 [build-badge]: https://github.com/jlqwer/countdown/workflows/Windows/badge.svg  "Windows"
