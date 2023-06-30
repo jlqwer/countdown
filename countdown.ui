@@ -93,7 +93,7 @@ background-image: url(:/resources/images/background.png);</string>
     <bool>false</bool>
    </property>
    <property name="text">
-    <string notr="true">-</string>
+    <string notr="true"/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

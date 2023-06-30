@@ -13,6 +13,7 @@ About::About(QWidget *parent) :
 {
     this->setWindowFlags(Qt::WindowCloseButtonHint | Qt::WindowStaysOnTopHint);
     ui->setupUi(this);
+    this->ui->version->setText(QString("Version %1").arg(QApplication::applicationVersion()));
 }
 
 About::~About()
