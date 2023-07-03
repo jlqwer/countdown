@@ -6,25 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>110</width>
+    <width>115</width>
     <height>35</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>110</width>
+    <width>115</width>
     <height>35</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>110</width>
+    <width>115</width>
     <height>35</height>
    </size>
   </property>
   <property name="baseSize">
    <size>
-    <width>110</width>
+    <width>115</width>
     <height>35</height>
    </size>
   </property>
@@ -50,7 +50,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_0">
    <property name="geometry">
     <rect>
-     <x>5</x>
+     <x>4</x>
      <y>0</y>
      <width>10</width>
      <height>35</height>
@@ -82,8 +82,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -134,8 +134,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -154,7 +154,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_2">
    <property name="geometry">
     <rect>
-     <x>27</x>
+     <x>28</x>
      <y>0</y>
      <width>12</width>
      <height>35</height>
@@ -186,8 +186,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -206,7 +206,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_4">
    <property name="geometry">
     <rect>
-     <x>44</x>
+     <x>47</x>
      <y>0</y>
      <width>12</width>
      <height>35</height>
@@ -238,8 +238,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -258,7 +258,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_5">
    <property name="geometry">
     <rect>
-     <x>56</x>
+     <x>60</x>
      <y>0</y>
      <width>12</width>
      <height>35</height>
@@ -290,8 +290,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -310,7 +310,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_7">
    <property name="geometry">
     <rect>
-     <x>73</x>
+     <x>78</x>
      <y>0</y>
      <width>12</width>
      <height>35</height>
@@ -342,8 +342,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -362,7 +362,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_8">
    <property name="geometry">
     <rect>
-     <x>85</x>
+     <x>91</x>
      <y>0</y>
      <width>12</width>
      <height>35</height>
@@ -394,8 +394,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -414,7 +414,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_3">
    <property name="geometry">
     <rect>
-     <x>39</x>
+     <x>41</x>
      <y>0</y>
      <width>5</width>
      <height>35</height>
@@ -446,8 +446,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
@@ -466,7 +466,7 @@ background-image: url(:/resources/images/background.png);</string>
   <widget class="QLabel" name="time_label_6">
    <property name="geometry">
     <rect>
-     <x>68</x>
+     <x>73</x>
      <y>0</y>
      <width>5</width>
      <height>35</height>
@@ -498,8 +498,8 @@ background-image: url(:/resources/images/background.png);</string>
    </property>
    <property name="font">
     <font>
-     <family>小米兰亭</family>
-     <pointsize>16</pointsize>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
