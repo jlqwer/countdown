@@ -115,7 +115,8 @@ QFont Config::getFont(int size)
 }
 
 //获取设置
-QString Config::getConfig(QSqlDatabase database, QString name) {
+QString Config::getConfig(QSqlDatabase database, QString name) 
+{
     QString value = "";
     QSqlQuery query = QSqlQuery(database);
     query.exec(QString("select value from config where name = '%1'").arg(name));
@@ -125,7 +126,8 @@ QString Config::getConfig(QSqlDatabase database, QString name) {
     return value;
 }
 //修改设置
-QString Config::setConfig(QSqlDatabase database, QString name,  QString value) {
+QString Config::setConfig(QSqlDatabase database, QString name,  QString value) 
+{
     QSqlQuery query = QSqlQuery(database);
     query.exec(QString("select value from config where name = '%1'").arg(name));
     if(query.next()) {
@@ -135,3 +137,22 @@ QString Config::setConfig(QSqlDatabase database, QString name,  QString value) {
     }
     return value;
 }
+
+//版本号比较
+int Config::compareVersion(QString version1, QString version2)
+{
+    QStringList version1List =  version1.split(".");
+    QStringList version2List =  version2.split(".");
+    int result = 0;
+    for (int i = 0; i < 3; i++) {
+        if (version1List[i] > version2List[i]) {
+            result = 1;
+            break;
+        } else if (version1List[i] < version2List[i]) {
+            result = -1;
+            break;
+        }
+    }
+    return result;
+}
+

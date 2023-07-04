@@ -19,6 +19,8 @@ class Config
         static QString getConfig(QSqlDatabase, QString);
         static QString setConfig(QSqlDatabase, QString, QString);
 
+        static int compareVersion(QString version1, QString version2);
+
     private:
         QSqlDatabase db;
 };
