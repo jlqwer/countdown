@@ -13,6 +13,7 @@ CONFIG += c++11
 SOURCES += \
     about.cpp \
     addtime.cpp \
+    checkupdate.cpp \
     config.cpp \
     main.cpp \
     countdown.cpp \
@@ -22,6 +23,7 @@ SOURCES += \
 HEADERS += \
     about.h \
     addtime.h \
+    checkupdate.h \
     config.h \
     countdown.h \
     setting.h \

@@ -7,6 +7,7 @@
 #include <QThread>
 #include <QSqlDatabase>
 #include <QMenu>
+#include <checkUpdate.h>
 #include "config.h"
 #include "setting.h"
 
@@ -37,6 +38,9 @@ class Countdown : public QWidget
         QMenu menu;
         bool settingIsShow;
 
+        QThread m_checkUpdateThread;
+        checkUpdate *m_checkUpdate;
+
         void savePos(int x, int y);
 
     protected:
@@ -48,11 +52,15 @@ class Countdown : public QWidget
         void mouseMoveEvent(QMouseEvent *event);
         void enterEvent(QEnterEvent *event);
 
+    signals:
+        void checkUpdateSignals();
+
     public slots:
         void downTime();
         void quit();    //右键退出
         void showSetting();  //编辑配置文件
         void returnMain();
         void about();   //关于
+        void checkUpdateReceiv(QString version, QString update_time, QString url, QString describe);
 };
 #endif // COUNTDOWN_H
