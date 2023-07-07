@@ -151,6 +151,12 @@ border: 0;
       <height>10000002</height>
      </size>
     </property>
+    <property name="font">
+     <font>
+      <family>MiSans</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
