@@ -121,6 +121,11 @@ border: 0;</string>
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MiSans</family>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(164, 164, 164);
 border: 0;
@@ -190,6 +195,12 @@ border-radius: 2px;</string>
       <width>80</width>
       <height>25</height>
      </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>MiSans</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
