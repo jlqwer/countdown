@@ -209,7 +209,7 @@ QPushButton#check_update:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>下载新版本</string>
+       <string>检查更新</string>
       </property>
      </widget>
     </item>
