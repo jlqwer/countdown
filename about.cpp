@@ -2,17 +2,15 @@
 #include "config.h"
 #include "ui_about.h"
 
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QMessageBox>
 #include <QDesktopServices>
-#include <QFontDatabase>
+#include <QMessageBox>
 
 About::About(QWidget *parent) :
-    QWidget(parent),
+    QDialog(parent),
     ui(new Ui::About)
 {
-    this->setWindowFlags(Qt::WindowCloseButtonHint | Qt::WindowStaysOnTopHint);
+    this->setWindowFlags(Qt::FramelessWindowHint);
+    this->setAttribute(Qt::WA_TranslucentBackground);
     ui->setupUi(this);
     this->ui->version->setText(QString("Version %1").arg(QApplication::applicationVersion()));
 }
@@ -21,6 +19,13 @@ About::~About()
 {
     delete ui;
 }
+
+void About::on_close_clicked()
+{
+    this->close();
+}
+
+
 void About::on_check_update_clicked()
 {
     m_checkUpdate = new checkUpdate();
@@ -31,7 +36,6 @@ void About::on_check_update_clicked()
     m_checkUpdateThread.start();
     emit checkUpdateSignals();
 }
-
 
 void About::checkUpdateReceiv(QString version,QString update_time,QString url,QString describe)
 {
@@ -49,5 +53,24 @@ void About::checkUpdateReceiv(QString version,QString update_time,QString url,QS
         updatemsgbox->setWindowTitle(QString("检测到新版本[%1]").arg(version));
         updatemsgbox->setText(QString("新版本发布日期：%1\n版本更新日志：\n  %2").arg(update_time, describe));
         updatemsgbox->show();
+    }
+}
+
+//鼠标点击
+void About::mousePressEvent(QMouseEvent *event)
+{
+    //左键窗口拖动
+    if (event->button() == Qt::LeftButton) {
+        m_isPressed = true;
+        m_startMovePos = event->globalPosition().toPoint() - this->frameGeometry().topLeft();
+    }
+}
+
+//鼠标拖动
+void About::mouseMoveEvent(QMouseEvent *event)
+{
+    if(m_isPressed) {
+        QPoint curPos = this->mapToGlobal(event->pos() - m_startMovePos);
+        move(curPos);
     }
 }
