@@ -9,7 +9,7 @@ About::About(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::About)
 {
-    this->setWindowFlags(Qt::FramelessWindowHint);
+    this->setWindowFlags(Qt::FramelessWindowHint| Qt::WindowStaysOnTopHint);
     this->setAttribute(Qt::WA_TranslucentBackground);
     ui->setupUi(this);
     this->ui->version->setText(QString("Version %1").arg(QApplication::applicationVersion()));
