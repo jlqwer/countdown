@@ -169,6 +169,9 @@ border-radius: 5px;</string>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="close">
     <property name="geometry">
