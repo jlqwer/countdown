@@ -34,6 +34,12 @@
      <height>36</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>MiSans</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -46,6 +52,12 @@
      <width>60</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MiSans</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
